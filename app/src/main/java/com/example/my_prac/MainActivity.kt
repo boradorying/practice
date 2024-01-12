@@ -41,8 +41,6 @@ class MainActivity : ComponentActivity() {
                         Log.d("jun", "flowOfStrings : $data")
                     }
                 }
-                //플로우오브스트링은 디스패쳐를 사용하여 별도의 코루틴에서 실행이 되고
-                //프린트넘버는 리핏온라이플사이클코루틴내에서 실행됨 만약 두 플로우가 순차적으로 진행되길 원하면 launch를 없애 그러면 딜레이 되면서 순차적으로 진행댐 ㄷ독립적으로 실행원하면
                 printNumbers().collect { data ->
                     Log.d("jun", ">> printNumbers() : $data")
                 }
