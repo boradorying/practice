@@ -46,6 +46,22 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                launch(Dispatchers.IO) {
+                    simpleStringFlow().collect { data ->
+                        Log.d("jun", "Received from flow: $data")
+                    }
+                }
+            }
+        }
+    }
+    private fun simpleStringFlow(): Flow<String> = flow {
+        val strings = listOf("Hello", "World", "From", "Flow")
+        for (string in strings) {
+            emit(string)
+            delay(1000L) // 1초 대기
+        }
     }
 
         private val flowOfStrings = flow {
