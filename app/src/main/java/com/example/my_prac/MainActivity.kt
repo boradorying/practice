@@ -62,7 +62,7 @@ class MainActivity : ComponentActivity() {
             emit(string)
             delay(1000L) // 1초 대기
         }
-    }
+    }//예시문추가
 
         private val flowOfStrings = flow {
             for (number in 0..10) {
