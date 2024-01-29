@@ -65,7 +65,7 @@ class MainActivity : ComponentActivity() {
     }//예시문추가
     //flow
     //livedata
-    //
+    //compose
 
         private val flowOfStrings = flow {
             for (number in 0..10) {
