@@ -66,6 +66,7 @@ class MainActivity : ComponentActivity() {
     //flow
     //livedata
     //compose
+    //composese
 
         private val flowOfStrings = flow {
             for (number in 0..10) {
