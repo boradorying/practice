@@ -64,7 +64,7 @@ class MainActivity : ComponentActivity() {
         }
     }//예시문추가
     //flow
-    //livedata
+
 
 
 
