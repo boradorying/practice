@@ -63,7 +63,7 @@ class MainActivity : ComponentActivity() {
             delay(1000L) // 1초 대기
         }
     }//예시문추가
-    //flow
+
 
 
 
